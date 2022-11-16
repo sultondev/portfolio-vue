@@ -2,3 +2,87 @@
   --clr-primary: #7B4AE2
   --clr-secondary: #090E16
   --clr-tertiary: #C83267
+
+  --white: #fff
+  --white-transparent: rgba(255, 255, 255, 0.5)
+  --primary-transparent: rgba(123, 74, 226, 0.1)
+
+
+  --heading-10: 14px
+  --heading-20: 18px
+  --heading-30: 22px
+  --heading-40: 28px
+  --heading-50: 35px
+  --heading-60: 42px
+  --heading-70: 56px
+  --heading-80: 60px
+  --heading-90: 80px
+
+*
+  padding: 0
+  margin: 0
+  color: var(--white)
+  font-family: "Raleway", sans-serif
+  text-decoration: none
+  box-sizing: border-box
+
+.container
+  width: 1640px
+  margin: 0 auto
+
+.flex
+  display: flex
+
+.general
+  &__button
+    border: 1px solid var(--clr-primary)
+    color: var(--clr-primary)
+    background-color: transparent
+    padding: 8px 12px
+    border-radius: 16px
+    width: min-content
+    white-space: nowrap
+    transition: all 0.3s
+
+    &:hover
+      color: var(--white)
+      background-color: var(--clr-primary)
+
+@media (min-width: 320px)
+  .container
+    width: 308px
+
+
+@media (min-width: 600px)
+  .container
+    width: 500px
+
+@media (min-width: 900px)
+  .container
+    width: 800px
+
+@media (min-width: 1200px)
+  .container
+    width: 1000px
+
+@media (min-width: 1700px)
+  .container
+    width: 1640px
+
+::-webkit-scrollbar
+  width: 6px
+
+::-webkit-scrollbar-track
+  background-color: transparent
+
+
+/* Handle */
+::-webkit-scrollbar-thumb
+  background: var(--clr-primary)
+  border-radius: 4px
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+  background: #555
+
