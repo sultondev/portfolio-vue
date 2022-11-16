@@ -6,7 +6,7 @@
   --white: #fff
   --white-transparent: rgba(255, 255, 255, 0.5)
   --primary-transparent: rgba(123, 74, 226, 0.1)
-
+  --nav-bg: #15152B
 
   --heading-10: 14px
   --heading-20: 18px
@@ -25,6 +25,7 @@
   font-family: "Raleway", sans-serif
   text-decoration: none
   box-sizing: border-box
+  list-style: none
 
 .container
   width: 1640px
@@ -32,6 +33,9 @@
 
 .flex
   display: flex
+
+.relative
+  position: relative
 
 .general
   &__button
@@ -42,11 +46,26 @@
     border-radius: 16px
     width: min-content
     white-space: nowrap
-    transition: all 0.3s
+    transition: all 0.3s cubic-bezier(.17, .67, .72, .53)
 
     &:hover
       color: var(--white)
       background-color: var(--clr-primary)
+
+  &__titles
+    background-color: var(--primary-transparent)
+    color: var(--clr-primary)
+    padding: 8px 12px
+    border-radius: 16px
+    width: min-content
+    white-space: nowrap
+    transition: all 0.4s cubic-bezier(.17, .67, .72, .53)
+    font-size: 16px
+
+    &:hover
+      color: var(--white)
+      background: var(--clr-primary)
+
 
 @media (min-width: 320px)
   .container

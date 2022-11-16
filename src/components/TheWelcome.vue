@@ -35,7 +35,10 @@
           <a class="welcome__cv">
             download CV <img alt="" src="../assets/icons/" />
           </a>
-          <a class="welcome__contact general__button" href="#">Let's talk</a>
+          <a class="welcome__contact general__button" href="#">
+            <img alt="" src="../assets/icons/website/telephone.svg" />
+            Let's talk</a
+          >
         </div>
       </div>
     </div>
@@ -46,7 +49,7 @@
 
 <style lang="sass">
 .welcome
-  min-height: 820px
+  min-height: 920px
   padding: 100px 0
   width: 100%
 
@@ -64,6 +67,9 @@
   &__contact
     font-size: 18px
     font-weight: 600
+    display: flex
+    align-items: center
+    gap: 6px
 
   &__name
     font-size: var(--heading-70)
