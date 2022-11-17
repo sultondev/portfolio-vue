@@ -55,10 +55,10 @@
               <img alt="" src="../assets/icons/stack/Docker.svg" />
             </li>
             <li class="skills-used__item">
-              <img alt="" src="../assets/icons/stack/Group%2026.svg" />
+              <img alt="" src="../assets/icons/stack/PostgreSQL.svg" />
             </li>
             <li class="skills-used__item">
-              <img alt="" src="../assets/icons/stack/Group%2027.svg" />
+              <img alt="" src="../assets/icons/stack/MongoDB.svg" />
             </li>
             <li class="skills-used__item">
               <img alt="" src="../assets/icons/stack/Nodejs.svg" />
@@ -90,6 +90,7 @@
 <style lang="sass" scoped>
 .skills
   padding: 100px 0
+  overflow-x: hidden
 
   &-head
     display: flex
@@ -113,6 +114,7 @@
     align-items: center
     gap: 16px
     margin: 40px 0
+    overflow-x: scroll
 
 
   &__subtitle

@@ -6,7 +6,7 @@
   --white: #fff
   --white-transparent: rgba(255, 255, 255, 0.5)
   --primary-transparent: rgba(123, 74, 226, 0.1)
-  --nav-bg: #15152B
+  --nav-bg: rgba(0, 0, 0, .5)
 
   --heading-10: 14px
   --heading-20: 18px
@@ -67,10 +67,30 @@
       background: var(--clr-primary)
 
 
+.router-link-exact-active
+  color: var(--clr-primary)
+  font-weight: 600
+
 @media (min-width: 320px)
   .container
     width: 308px
 
+  ::-webkit-scrollbar
+    width: 2px
+
+  ::-webkit-scrollbar-track
+    background-color: transparent
+
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb
+    background: var(--clr-primary)
+    border-radius: 4px
+
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover
+    background: #555
 
 @media (min-width: 600px)
   .container
@@ -80,6 +100,10 @@
   .container
     width: 800px
 
+  ::-webkit-scrollbar
+    width: 6px
+
+
 @media (min-width: 1200px)
   .container
     width: 1000px
@@ -88,20 +112,4 @@
   .container
     width: 1640px
 
-::-webkit-scrollbar
-  width: 6px
-
-::-webkit-scrollbar-track
-  background-color: transparent
-
-
-/* Handle */
-::-webkit-scrollbar-thumb
-  background: var(--clr-primary)
-  border-radius: 4px
-
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover
-  background: #555
 
