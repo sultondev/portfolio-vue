@@ -3,16 +3,18 @@
     <nav class="nav">
       <ul class="nav-list flex">
         <li class="nav-list__item">
-          <RouterLink class="nav-list__link" to="/">Home</RouterLink>
+          <RouterLink class="nav-list__link" exact to="/">Home</RouterLink>
         </li>
         <li class="nav-list__item">
-          <RouterLink class="nav-list__link" to="/blog">Blog</RouterLink>
+          <RouterLink class="nav-list__link" exact to="/blog">Blog</RouterLink>
         </li>
         <li class="nav-list__item">
-          <RouterLink class="nav-list__link" to="/tools">Tools</RouterLink>
+          <RouterLink class="nav-list__link" exact to="/tools"
+            >Tools
+          </RouterLink>
         </li>
         <li class="nav-list__item">
-          <RouterLink class="nav-list__link" to="/interests"
+          <RouterLink class="nav-list__link" exact to="/interests"
             >Interests
           </RouterLink>
         </li>
@@ -30,6 +32,8 @@ import { RouterLink } from "vue-router"
   width: min-content
   padding: 10px 16px
   background-color: var(--nav-bg)
+  backdrop-filter: blur(5px)
+
   position: fixed
   bottom: 40px
   left: 50%
@@ -48,8 +52,4 @@ import { RouterLink } from "vue-router"
 
       &:hover
         color: var(--white)
-
-.router-link-exact-active
-  color: var(--clr-primary)
-  font-weight: 600
 </style>

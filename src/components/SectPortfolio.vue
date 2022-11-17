@@ -228,10 +228,13 @@
     margin: 0 auto
 
   &-list
+    display: flex
+    overflow-x: scroll
+    //grid-template-columns: repeat(auto-fit, minmax(300px, 360px))
+    width: 100%
+
     //display: grid
     //grid-template-columns: repeat(auto-fit, minmax(300px, 360px))
-    display: flex
-    width: 100%
     overflow-scrolling: touch
     justify-content: space-between
     padding: 60px 40px
@@ -245,6 +248,7 @@
       display: flex
       flex-direction: column
       gap: 80px
+      min-width: 360px
 
       &:nth-child(2n)
         border: none
@@ -279,9 +283,15 @@
       &__item
         justify-content: center
 
-//@media (min-width: 1700px)
-//  .video
-//    &-body
-//      &__item
-//        justify-content: space-between
+  .portfolio
+    &-head
+      flex-direction: column
+      gap: 20px
+      margin: 20px 0
+
+@media (min-width: 900px)
+  .portfolio
+    &-head
+      flex-direction: row
+      justify-content: space-between
 </style>

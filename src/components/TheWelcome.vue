@@ -14,13 +14,13 @@
           </h2>
           <ul class="welcome-networks">
             <li class="welcome-networks__item">
-              <img alt="" src="../assets/icons/social-networks/linkedin.svg" />
+              <img alt="" src="@/assets/icons/social-networks/linkedin.svg" />
             </li>
             <li class="welcome-networks__item">
-              <img alt="" src="../assets/icons/social-networks/github.svg" />
+              <img alt="" src="@/assets/icons/social-networks/github.svg" />
             </li>
             <li class="welcome-networks__item">
-              <img alt="" src="../assets/icons/social-networks/telegram.svg" />
+              <img alt="" src="@/assets/icons/social-networks/telegram.svg" />
             </li>
           </ul>
         </div>
@@ -28,15 +28,13 @@
           <img
             alt=""
             class="welcome-list__picture"
-            src="../assets/icons/logo/Me.svg"
+            src="@/assets/icons/logo/Me.svg"
           />
         </div>
         <div class="welcome-list__item welcome-list__three">
-          <a class="welcome__cv">
-            download CV <img alt="" src="../assets/icons/" />
-          </a>
+          <a class="welcome__cv"> download CV </a>
           <a class="welcome__contact general__button" href="#">
-            <img alt="" src="../assets/icons/website/telephone.svg" />
+            <img alt="" src="@/assets/icons/website/telephone.svg" />
             Let's talk</a
           >
         </div>
