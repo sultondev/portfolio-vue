@@ -232,6 +232,10 @@
     overflow-x: scroll
     //grid-template-columns: repeat(auto-fit, minmax(300px, 360px))
     width: 100%
+
+    //display: grid
+    //grid-template-columns: repeat(auto-fit, minmax(300px, 360px))
+    overflow-scrolling: touch
     justify-content: space-between
     padding: 60px 40px
     gap: 40px
