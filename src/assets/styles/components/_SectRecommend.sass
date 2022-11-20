@@ -1,0 +1,43 @@
+.recommend
+  &__title
+    margin-bottom: 24px
+
+  &__subtitle
+    font-style: normal
+    font-weight: 800
+    font-size: 48px
+    line-height: 56px
+
+  &-list
+    display: flex
+    overflow-x: scroll
+    gap: 60px
+    margin: 64px 0
+
+    &-head
+      display: flex
+      align-items: center
+      gap: 10px
+
+
+    &__item
+      min-width: 500px
+      max-width: 500px
+      padding: 30px 20px
+      border: 1px solid var(--clr-primary)
+      border-radius: 16px
+      width: fit-content
+
+      display: flex
+      flex-direction: column
+      gap: 40px
+
+    &__item:nth-child(5n+2)
+      background-color: var(--primary-transparent)
+      border: none
+
+    &__name
+      font-style: normal
+      font-weight: 700
+      font-size: 20px
+      line-height: 23px

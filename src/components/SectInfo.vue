@@ -2,8 +2,12 @@
   <div class="info">
     <div class="container">
       <div class="info-border">
-        <ul class="info-list">
-          <li class="info-list__item info-list__one flex">
+        <ul class="info-list" data-aos="fade-up">
+          <li
+            class="info-list__item info-list__one flex"
+            data-aos="fade-up"
+            data-aos-offset="150"
+          >
             <div class="relative">
               <img
                 alt=""
@@ -15,7 +19,11 @@
             <h6 class="info-list__subtitle">3 years as</h6>
             <h6 class="info-list__title">Programmer</h6>
           </li>
-          <li class="info-list__item info-list__two flex">
+          <li
+            class="info-list__item info-list__two flex"
+            data-aos="fade-up"
+            data-aos-offset="200"
+          >
             <div class="relative">
               <img
                 alt=""
@@ -26,7 +34,11 @@
             <h6 class="info-list__subtitle">2 years of</h6>
             <h6 class="info-list__title">Works</h6>
           </li>
-          <li class="info-list__item info-list__three flex">
+          <li
+            class="info-list__item info-list__three flex"
+            data-aos="fade-up"
+            data-aos-offset="250"
+          >
             <div class="relative">
               <img
                 alt=""
@@ -37,7 +49,11 @@
             <h6 class="info-list__subtitle">1 years like</h6>
             <h6 class="info-list__title">Designer</h6>
           </li>
-          <li class="info-list__item info-list__four flex">
+          <li
+            class="info-list__item info-list__four flex"
+            data-aos="fade-up"
+            data-aos-offset="100"
+          >
             <div class="info-data__item flex">
               <h6 class="info-data__subtitle">Developer</h6>
               <h6 class="info-data__title">Front-End</h6>
@@ -54,14 +70,14 @@
         </ul>
       </div>
       <div class="info-life flex">
-        <div class="">
+        <div class="" data-aos="fade-right" data-aos-offset="200">
           <img
             alt=""
             class="info-life__picture"
             src="../assets/images/my/own.jpg"
           />
         </div>
-        <div class="info-right">
+        <div class="info-right" data-aos="fade-left" data-aos-offset="200">
           <h6 class="info-right__title general__button">🧐 About me</h6>
           <h6 class="info-right__name">
             SultanKhan Said Ahmad <br />
@@ -103,7 +119,6 @@
 </template>
 
 <script lang="ts" setup></script>
-flex
 
 <style lang="sass">
 .info

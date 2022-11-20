@@ -1,0 +1,76 @@
+@media (min-width: 320px)
+  .container
+    width: 308px
+
+  .skills
+    &-loved, &-used
+      justify-content: space-between
+
+
+  ::-webkit-scrollbar
+    width: auto
+    height: 2px
+
+  .career
+    &-list
+      flex-direction: row
+      overflow-x: scroll
+
+    &-prof
+      align-items: unset
+
+
+  .footer
+    &-wrapper
+      flex-direction: column-reverse
+
+    &__copyright
+      text-align: center
+
+@media (min-width: 600px)
+  .container
+    width: 560px
+
+@media (min-width: 900px)
+  .container
+    width: 840px
+
+  ::-webkit-scrollbar
+    width: 6px
+    height: auto
+
+  .welcome
+    &-list
+      &__three
+        place-items: start
+
+
+  .skills
+    &-loved, &-used
+      justify-content: center
+
+  .career
+    &-list
+      flex-direction: column
+
+    &-prof
+      align-items: center
+
+  .footer
+    &-wrapper
+      flex-direction: row
+
+@media (min-width: 1200px)
+  .container
+    width: 1100px
+
+  .welcome
+    min-width: 420px
+
+
+@media (min-width: 1700px)
+  .container
+    width: 1640px
+
+  .welcome
+    min-height: 920px
