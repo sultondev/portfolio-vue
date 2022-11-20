@@ -33,7 +33,6 @@ import { RouterLink } from "vue-router"
   padding: 10px 16px
   background-color: var(--nav-bg)
   backdrop-filter: blur(5px)
-
   position: fixed
   bottom: 40px
   left: 50%

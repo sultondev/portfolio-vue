@@ -1,13 +1,13 @@
 <template>
   <section class="skills">
     <div class="container">
-      <div class="skills-head">
+      <div class="skills-head" data-aos="fade-up" data-aos-offset="200">
         <h6 class="skills__title general__titles">
           ‍🧑‍💻Skills &centerdot; Experience
         </h6>
         <p class="skills__subtitle">Technologies and skills</p>
       </div>
-      <ul class="skills-body">
+      <ul class="skills-body" data-aos="fade-up" data-aos-offset="400">
         <li class="skills-body__item">
           <p class="skills-body__subtitle">Techs I use on a daily basis</p>
           <ul class="skills-loved">
@@ -21,10 +21,10 @@
               <img alt="" src="../assets/icons/skills/TypeScript.svg" />
             </li>
             <li class="skills-loved__item">
-              <img alt="" src="../assets/icons/skills/Nextjs.svg" />
+              <img alt="" src="../assets/icons/skills/Css.svg" />
             </li>
             <li class="skills-loved__item">
-              <img alt="" src="../assets/icons/skills/Css.svg" />
+              <img alt="" src="../assets/icons/stack/strapi.svg" width="64" />
             </li>
             <li class="skills-loved__item">
               <img alt="" src="../assets/icons/skills/HTML5.svg" />
@@ -38,9 +38,6 @@
             <li class="skills-loved__item">
               <img alt="" src="../assets/icons/skills/Git.svg" />
             </li>
-            <li class="skills-loved__item">
-              <img alt="" src="../assets/icons/skills/Insomnia.svg" />
-            </li>
           </ul>
         </li>
         <li class="skills-body__item">
@@ -49,16 +46,7 @@
           </p>
           <ul class="skills-used">
             <li class="skills-used__item">
-              <img alt="" src="../assets/icons/stack/bitbucket.svg" />
-            </li>
-            <li class="skills-used__item">
-              <img alt="" src="../assets/icons/stack/Docker.svg" />
-            </li>
-            <li class="skills-used__item">
-              <img alt="" src="../assets/icons/stack/PostgreSQL.svg" />
-            </li>
-            <li class="skills-used__item">
-              <img alt="" src="../assets/icons/stack/MongoDB.svg" />
+              <img alt="" src="../assets/icons/skills/Nextjs.svg" />
             </li>
             <li class="skills-used__item">
               <img alt="" src="../assets/icons/stack/Nodejs.svg" />
@@ -67,13 +55,7 @@
               <img alt="" src="../assets/icons/stack/Python.svg" />
             </li>
             <li class="skills-used__item">
-              <img alt="" src="../assets/icons/stack/Shape.svg" />
-            </li>
-            <li class="skills-used__item">
               <img alt="" src="../assets/icons/stack/TailwindCSS.svg" />
-            </li>
-            <li class="skills-used__item">
-              <img alt="" src="../assets/icons/stack/Union.svg" />
             </li>
             <li class="skills-used__item">
               <img alt="" src="../assets/icons/stack/Vue.svg" />
@@ -110,8 +92,8 @@
 
   &-loved, &-used
     display: flex
-    justify-content: center
     align-items: center
+    justify-content: center
     gap: 16px
     margin: 40px 0
     overflow-x: scroll
