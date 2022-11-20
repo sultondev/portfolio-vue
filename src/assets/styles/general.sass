@@ -82,12 +82,15 @@
   font-weight: 600
 
 
-body::-webkit-scrollbar-track
-  background-color: transparent
+body
+  overflow-x: hidden
 
-body::-webkit-scrollbar-thumb
-  background: var(--clr-primary)
-  border-radius: 4px
+  &::-webkit-scrollbar-track
+    background-color: transparent
+
+  &::-webkit-scrollbar-thumb
+    background: var(--clr-primary)
+    border-radius: 4px
 
 
 /* Handle */
