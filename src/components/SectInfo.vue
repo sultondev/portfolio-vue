@@ -198,6 +198,7 @@
 
   &-life
     padding: 140px 0
+    overflow-x: hidden
     gap: 20px
 
 
