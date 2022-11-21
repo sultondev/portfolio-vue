@@ -1,7 +1,9 @@
 <template>
   <section class="portfolio">
     <div class="container">
-      <h6 class="portfolio__title general__titles">🔗Portfolio</h6>
+      <h6 class="portfolio__title general__titles">
+        <span class="icon">🔗</span>Portfolio
+      </h6>
       <div class="portfolio-head flex">
         <h6 class="portfolio-head__title">Works and projects</h6>
         <ul class="portfolio-filters flex">

@@ -1,7 +1,9 @@
 <template>
   <section class="contacts">
     <div class="container">
-      <h4 class="contacts__title general__titles">📬Contacts</h4>
+      <h4 class="contacts__title general__titles">
+        <span class="icon">📬</span>Contacts
+      </h4>
       <h6 class="contacts__subtitle">Let's talk!</h6>
       <ul class="contacts-list">
         <li class="contacts-list__item">

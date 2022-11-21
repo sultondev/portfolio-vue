@@ -1,0 +1,53 @@
+.skills
+  padding: 100px 0
+  overflow-x: hidden
+
+  &-head
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 20px
+
+  &-body
+    margin: 40px 0
+
+    &__subtitle
+      text-align: center
+      color: var(--white-transparent)
+      font-size: var(--heading-10)
+      margin: 10px 0
+
+
+  &-loved, &-used
+    display: flex
+    align-items: center
+    gap: 16px
+    margin: 40px 0
+    overflow-x: scroll
+
+    &__item
+      position: relative
+      transition: all 0.4s
+      cursor: pointer
+
+      &::after
+        transition: all 0.4s
+        content: attr(skill)
+        color: var(--white)
+        background: var(--black)
+        padding: 2px 4px
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        top: 30%
+        opacity: 0
+
+      &:hover
+        &::after
+          opacity: 1
+
+
+  &__subtitle
+    font-weight: 600
+    text-align: center
+    font-size: var(--heading-50)
