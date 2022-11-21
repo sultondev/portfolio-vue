@@ -93,7 +93,6 @@
   &-loved, &-used
     display: flex
     align-items: center
-    justify-content: center
     gap: 16px
     margin: 40px 0
     overflow-x: scroll
@@ -101,5 +100,6 @@
 
   &__subtitle
     font-weight: 600
+    text-align: center
     font-size: var(--heading-50)
 </style>
