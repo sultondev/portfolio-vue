@@ -47,4 +47,4 @@ npm run lint
 "# portfolio-vue" 
 
 ##In production
-(https://portfolio-vue-sultondev.vercel.app/)[https://portfolio-vue-sultondev.vercel.app/]
+[https://portfolio-vue-sultondev.vercel.app/](https://portfolio-vue-sultondev.vercel.app/)
