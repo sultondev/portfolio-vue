@@ -71,4 +71,5 @@
 
 <style lang="sass" scoped>
 @import "@/assets/styles/components/SectSkills.sass"
+
 </style>
