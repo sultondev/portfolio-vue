@@ -13,7 +13,7 @@ AOS.init()
 
 <style lang="sass">
 @import "./assets/styles/general.sass"
-@import "./assets/styles/_mobile.sass"
+@import "./assets/styles/mobile.sass"
 
 body
   background-color: var(--clr-secondary)

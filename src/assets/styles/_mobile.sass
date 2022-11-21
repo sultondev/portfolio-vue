@@ -2,10 +2,60 @@
   .container
     width: 308px
 
-  .skills
-    &-loved, &-used
-      justify-content: space-between
+  .welcome
+    padding: 40px 0
 
+    &__name
+      font-size: var(--heading-60)
+
+    &-list
+      display: flex
+      flex-wrap: wrap
+      gap: 20px
+      padding: 0 20px
+
+      &__two
+        order: -1
+        margin: 0 auto
+
+      &__picture
+        width: 285px
+
+
+  .info
+    &-list
+      display: flex
+      flex-direction: column
+      gap: 80px
+
+      &__item
+        flex-direction: column
+
+
+      &__four
+        display: flex
+        grid-column: unset
+        flex-direction: column
+        gap: 30px
+
+    &-life
+      flex-direction: column
+      justify-content: center
+      align-items: center
+
+      &__picture
+        width: 220px
+        height: 220px
+
+      & > p
+        font-size: var(--heading-10)
+
+    &-right
+      padding: 0 20px
+      gap: 30px
+
+      &__name
+        font-size: var(--heading-40)
 
   ::-webkit-scrollbar
     width: auto
@@ -20,6 +70,13 @@
       align-items: unset
 
 
+  .portfolio
+    &-list
+      &__item
+        min-width: 280px
+        max-width: 280px
+
+
   .footer
     &-wrapper
       flex-direction: column-reverse
@@ -27,9 +84,20 @@
     &__copyright
       text-align: center
 
+
 @media (min-width: 600px)
   .container
     width: 560px
+
+  .skills
+    &-loved, &-used
+      justify-content: center
+
+  .portfolio
+    &-list
+      &__item
+        min-width: 360px
+        max-width: 360px
 
 @media (min-width: 900px)
   .container
@@ -40,14 +108,47 @@
     height: auto
 
   .welcome
+    padding: 100px 0
+
     &-list
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+
       &__three
         place-items: start
 
+      &__two
+        order: unset
 
-  .skills
-    &-loved, &-used
-      justify-content: center
+      &__picture
+        width: 380px
+
+    &__name
+      font-size: var(--heading-60)
+
+
+  .info
+    &-life
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+
+      &__picture
+        height: 400px
+        width: 400px
+
+    &-list
+      display: grid
+      grid-template-columns: repeat(3, minmax(246px, 300px))
+
+      &__four
+        grid-column: 1 / 4
+        display: flex
+        flex-direction: row
+
+    &-right
+      &__name
+        font-size: var(--heading-60)
 
   .career
     &-list
@@ -67,6 +168,9 @@
   .welcome
     min-width: 420px
 
+    &__name
+      font-size: var(--heading-70)
+
 
 @media (min-width: 1700px)
   .container
@@ -74,3 +178,12 @@
 
   .welcome
     min-height: 920px
+
+    &-list
+      grid-template-columns: repeat(3, 1fr)
+
+      &__two
+        order: unset
+
+      &__picture
+        width: auto
