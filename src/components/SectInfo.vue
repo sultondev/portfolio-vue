@@ -74,7 +74,7 @@
           <img
             alt=""
             class="info-life__picture"
-            src="../assets/images/my/own.jpg"
+            src="../assets/images/my/person.jpg"
           />
         </div>
         <div class="info-right" data-aos="fade-left" data-aos-offset="200">

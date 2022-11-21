@@ -2,7 +2,9 @@
   <section class="recommend">
     <div class="container">
       <div class="recommend-head">
-        <h4 class="recommend__title general__titles">💬Recommendations</h4>
+        <h4 class="recommend__title general__titles">
+          <span class="icon">💬</span>Recommendations
+        </h4>
         <p class="recommend__subtitle">In deposition</p>
       </div>
       <ul class="recommend-list">

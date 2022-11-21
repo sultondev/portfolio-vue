@@ -4,6 +4,7 @@
   --clr-tertiary: #C83267
 
   --white: #fff
+  --black: #000
   --white-transparent: rgba(255, 255, 255, 0.5)
   --primary-transparent: rgba(123, 74, 226, 0.1)
   --nav-bg: rgba(0, 0, 0, .5)
@@ -40,7 +41,7 @@
 
 .column
   flex-direction: column
-  
+
 .relative
   position: relative
 
@@ -63,15 +64,14 @@
     background-color: var(--primary-transparent)
     color: var(--clr-primary)
     padding: 8px 12px
+    font-size: var(--heading-20)
     border-radius: 16px
     width: min-content
     white-space: nowrap
     transition: all 0.4s cubic-bezier(.17, .67, .72, .53)
-    font-size: 16px
 
-    &:hover
-      color: var(--white)
-      background: var(--clr-primary)
+    & > .icon
+      margin-right: 4px
 
   &-br__8
     border-radius: 8px

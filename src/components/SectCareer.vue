@@ -1,7 +1,9 @@
 <template>
   <section class="career">
     <div class="container">
-      <h4 class="career__title general__titles">💼Career</h4>
+      <h4 class="career__title general__titles">
+        <span class="icon">💼</span>Career
+      </h4>
       <h6 class="career__header">Path to Here</h6>
 
       <div class="career-path">
