@@ -5,6 +5,9 @@
 
   --white: #fff
   --black: #000
+
+  --gray: #ffffff5A
+
   --white-transparent: rgba(255, 255, 255, 0.5)
   --primary-transparent: rgba(123, 74, 226, 0.1)
   --nav-bg: rgba(0, 0, 0, .5)
@@ -19,6 +22,11 @@
   --heading-80: 60px
   --heading-90: 80px
 
+  --breakpoint-1: 320px
+  --breakpoint-2: 600px
+  --breakpoint-3: 900px
+  --breakpoint-4: 1200px
+
 *
   padding: 0
   margin: 0
@@ -28,6 +36,14 @@
   box-sizing: border-box
   list-style: none
   scroll-behavior: smooth
+
+
+.icomoon
+  &__font
+    color: inherit
+    font-size: inherit
+    min-width: 20px
+    min-height: 20px
 
 .container
   width: 1640px
@@ -59,6 +75,7 @@
     &:hover
       color: var(--white)
       background-color: var(--clr-primary)
+
 
   &__titles
     background-color: var(--primary-transparent)
@@ -103,5 +120,3 @@ body
 
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover
-  background: #555
