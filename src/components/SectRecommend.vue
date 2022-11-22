@@ -12,6 +12,8 @@
           v-for="person in recommends"
           :key="person.name + person.rate"
           class="recommend-list__item"
+          data-aos="fade-up"
+          data-aos-delay="100"
         >
           <span class="recommend-list__rate">{{ person.rate }}</span>
           <p class="recommend-list__message">

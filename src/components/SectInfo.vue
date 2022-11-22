@@ -88,7 +88,7 @@
             <p class="info-right__welcome">
               👋<span
                 >My name is SultanKhan Said Ahmad Ablakulav, but you can just
-                call me . Pleasure!</span
+                call me Sultankhan. Pleasure!</span
               >
             </p>
             <p class="info-right__development">
@@ -98,7 +98,7 @@
               >
             </p>
             <p class="info-right__univer">
-              🎓<span> student of E-commerce and Computer science at TUIT</span>
+              🎓<span>Student of E-commerce faculty at TUIT</span>
             </p>
             <p class="info-right__development">
               💡<span
@@ -107,8 +107,9 @@
               >
             </p>
             <p class="">
-              🚀<span>
-                Trying to be a little bit better than yesterday every day.</span
+              🚀<span
+                >Trying to be a little bit better than yesterday every
+                day.</span
               >
             </p>
           </div>
