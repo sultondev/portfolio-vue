@@ -58,7 +58,7 @@
             Download CV
             <span class="icomoon__font icon-download"></span>
           </a>
-          <a class="welcome__contact general__button" href="#">
+          <a class="welcome__contact general__button" href="tel:+998994425072">
             <span class="icomoon__font icon-phone-inline"></span>
             Let's talk
           </a>
