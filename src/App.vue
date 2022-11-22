@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { RouterView } from "vue-router"
 import TheNavbar from "./components/TheNavbar.vue"
+import "./assets/fonts/style.css"
 import AOS from "aos"
 
 AOS.init()

@@ -18,13 +18,19 @@
           </h2>
           <ul class="welcome-networks">
             <li class="welcome-networks__item">
-              <img alt="" src="@/assets/icons/social-networks/linkedin.svg" />
+              <a href="#">
+                <span class="icomoon__font icon-linkedin"></span>
+              </a>
             </li>
             <li class="welcome-networks__item">
-              <img alt="" src="@/assets/icons/social-networks/github.svg" />
+              <a href="#">
+                <span class="icomoon__font icon-github"></span>
+              </a>
             </li>
             <li class="welcome-networks__item">
-              <img alt="" src="@/assets/icons/social-networks/telegram.svg" />
+              <a href="#">
+                <span class="icomoon__font icon-telegram"></span>
+              </a>
             </li>
           </ul>
         </div>
@@ -50,17 +56,12 @@
             target="_blank"
           >
             Download CV
-            <img
-              alt=""
-              height="18"
-              src="../assets/icons/website/download.svg"
-              width="18"
-            />
+            <span class="icomoon__font icon-download"></span>
           </a>
           <a class="welcome__contact general__button" href="#">
-            <img alt="" src="@/assets/icons/website/telephone.svg" />
-            Let's talk</a
-          >
+            <span class="icomoon__font icon-phone-inline"></span>
+            Let's talk
+          </a>
         </div>
       </div>
     </div>

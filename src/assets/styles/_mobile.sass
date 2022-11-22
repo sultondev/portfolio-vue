@@ -57,6 +57,7 @@
       &__name
         font-size: var(--heading-40)
 
+
   ::-webkit-scrollbar
     width: auto
     height: 2px
@@ -71,10 +72,20 @@
 
 
   .portfolio
+    &-head
+      flex-direction: column
+      gap: 20px
+      margin: 20px 0
+
     &-list
       &__item
         min-width: 280px
         max-width: 280px
+
+  .video
+    &-body
+      &__item
+        justify-content: unset
 
 
   .footer
@@ -149,6 +160,12 @@
     &-right
       &__name
         font-size: var(--heading-60)
+
+  .portfolio
+    &-head
+      flex-direction: row
+      justify-content: space-between
+
 
   .career
     &-list

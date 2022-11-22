@@ -87,11 +87,13 @@
   &-body
     display: flex
     overflow-x: scroll
-    //display: grid
-    //grid-template-columns: repeat(auto-fit, minmax(300px, 480px))
+    overflow-y: hidden
     justify-content: space-between
     padding: 20px 0
     gap: 20px
+
+    ::-webkit-scrollbar
+      opacity: 0
 
     &__item
       border-radius: 16px
@@ -110,21 +112,8 @@
     &__name
       font-size: var(--heading-20)
 
-
-@media (min-width: 320px)
-  .video
-    &-body
-      &__item
-        justify-content: center
-
-  .portfolio
-    &-head
-      flex-direction: column
-      gap: 20px
-      margin: 20px 0
-
-@media (min-width: 900px)
-  .portfolio
-    &-head
-      flex-direction: row
-      justify-content: space-between
+@keyframes slider
+  0%
+    transform: translateX(0)
+  100%
+    transform: translateX(calc(-500px * 4))

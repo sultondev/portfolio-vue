@@ -1,3 +1,4 @@
+<link href="../assets/styles/_mobile.sass" rel="stylesheet">
 <template>
   <section class="portfolio">
     <div class="container">
@@ -65,7 +66,7 @@
         </li>
       </ul>
       <router-link class="portfolio__more" to="portfolio"
-        >View more projects &rightarrow;
+      >View more projects &rightarrow;
       </router-link>
       <section class="video">
         <div class="video-head">
@@ -83,6 +84,22 @@
           >
             <img
               alt=""
+              class="video-body__thumbnail"
+              src="../assets/images/projects/thumbnail/project01.svg"
+            />
+            <div class="video-info">
+              <h6 class="video-info__name">Move it</h6>
+            </div>
+          </div>
+          <div
+            class="video-body__item"
+            data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-offset="200"
+          >
+            <img
+              alt=""
+              class="video-body__thumbnail"
               src="../assets/images/projects/thumbnail/project01.svg"
             />
             <div class="video-info">
@@ -97,6 +114,7 @@
           >
             <img
               alt=""
+              class="video-body__thumbnail"
               src="../assets/images/projects/thumbnail/project01.svg"
             />
             <div class="video-info">
@@ -111,6 +129,7 @@
           >
             <img
               alt=""
+              class="video-body__thumbnail"
               src="../assets/images/projects/thumbnail/project01.svg"
             />
             <div class="video-info">
@@ -123,7 +142,11 @@
   </section>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ref } from "vue"
+
+const videosAmount = ref(4)
+</script>
 
 <style lang="sass" scoped>
 @import "@/assets/styles/components/_SectPortfolio.sass"

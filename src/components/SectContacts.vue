@@ -8,20 +8,16 @@
       <ul class="contacts-list">
         <li class="contacts-list__item">
           <a class="contacts-list__tel general__button" href="tel:+998994425072"
-            ><img alt="" src="../assets/icons/website/telephone.svg" />
-            Let's talk
+            ><span class="icomoon__font icon-phone-inline"></span>
+            <span>Let's talk</span>
           </a>
         </li>
         <li class="contacts-list__item">
           <a
             class="contacts-list__mail general__button"
             href="mailto:sultondeveloper@gmail.com"
-            ><img
-              alt=""
-              class="contacts-list__mail-img"
-              src="../assets/icons/website/mail.svg"
-            />
-            sultondeveloper@gmail.com
+            ><span class="icomoon__font icon-telegram"></span>
+            <span> sultondeveloper@gmail.com </span>
           </a>
         </li>
       </ul>
