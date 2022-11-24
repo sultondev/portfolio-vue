@@ -1,0 +1,19 @@
+// axios.ts
+
+import axios from "axios"
+import type { App } from "vue"
+
+interface AxiosOptions {
+  baseUrl?: string
+  token?: string
+}
+
+export const axiosInstance = axios.create({
+  baseURL: "http://localhost:1337/api",
+})
+
+export default {
+  install: (app: App, options: AxiosOptions) => {
+    app.config.globalProperties.$axios = { ...axiosInstance }
+  },
+}

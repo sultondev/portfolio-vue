@@ -1,0 +1,17 @@
+{
+  "projects": [
+    {
+      "id": "aC2-F2",
+      "name": "Todo List",
+      "description": "This is todo app was created with React",
+      "techs": [
+        "React",
+        "TypeScript"
+      ],
+      "lang": "en",
+      "status": false,
+      "linkToPicture": "",
+      "linkToProject": "https://todo-list-y.vercel.app/"
+    }
+  ]
+}

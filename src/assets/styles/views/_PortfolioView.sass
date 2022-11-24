@@ -1,0 +1,55 @@
+.portfolio
+  padding: 100px 0
+
+  &__title
+    font-size: var(--heading-40)
+
+  &-list
+    display: flex
+    width: 100%
+    justify-content: space-between
+    flex-wrap: wrap
+    row-gap: 40px
+    padding: 60px 40px
+
+    &__link
+      border-radius: 16px
+      border: 1px solid var(--clr-primary)
+      padding: 28px 30px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      gap: 40px
+      min-height: 480px
+      position: relative
+      z-index: 4
+
+
+    &__demo
+      position: relative
+      z-index: 10
+
+    &__thumb
+      width: 100%
+      object-fit: contain
+
+    &__name
+      margin-bottom: 10px
+
+    &__desc
+      font-size: var(--heading-10)
+      color: #FFFFFF80
+      font-weight: 200
+
+
+  &-tags
+    display: flex
+    flex-wrap: wrap
+    gap: 4px
+
+    &__item
+      background: var(--primary-transparent)
+      color: var(--clr-primary)
+      border-radius: 6px
+      padding: 6px 12px
+      margin-bottom: 10px
