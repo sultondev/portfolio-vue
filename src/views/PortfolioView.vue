@@ -5,7 +5,15 @@
       <div v-if="portfolioStore.portfolio" class="">
         <ul class="portfolio-list">
           <li
-            v-for="{ id, attributes } in portfolioStore.portfolio"
+            v-for="{
+              id,
+              attributes: {
+                slug: string,
+                name: string,
+                description: string,
+                tags: { data: any },
+              },
+            } in portfolioStore.portfolio"
             :key="attributes.slug"
             :data-aos-delay="100 * id"
             :data-aos-offset="30 * id"
