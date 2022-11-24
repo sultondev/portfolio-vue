@@ -9,7 +9,7 @@ interface AxiosOptions {
 }
 
 export const axiosInstance = axios.create({
-  baseURL: "http://localhost:1337/api",
+  baseURL: "https://portfolio-vue-backend-production.up.railway.app/api",
 })
 
 export default {
