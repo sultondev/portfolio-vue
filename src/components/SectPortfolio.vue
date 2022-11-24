@@ -145,6 +145,7 @@
 <script lang="ts" setup>
 import { ref } from "vue"
 
+
 const videosAmount = ref(4)
 </script>
 
