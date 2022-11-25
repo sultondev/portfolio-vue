@@ -70,76 +70,76 @@
       <router-link class="portfolio__more" to="portfolios"
       >View more projects &rightarrow;
       </router-link>
-      <section class="video">
-        <div class="video-head">
-          <h6 class="video-head__title">Video projects</h6>
-          <p class="video-head__subtitle">
-            It's always good to know a little editing
-          </p>
-        </div>
-        <div class="video-body">
-          <div
-            class="video-body__item"
-            data-aos="fade-up"
-            data-aos-delay="150"
-            data-aos-offset="200"
-          >
-            <img
-              alt=""
-              class="video-body__thumbnail"
-              src="../assets/images/projects/thumbnail/project01.svg"
-            />
-            <div class="video-info">
-              <h6 class="video-info__name">Move it</h6>
-            </div>
-          </div>
-          <div
-            class="video-body__item"
-            data-aos="fade-up"
-            data-aos-delay="150"
-            data-aos-offset="200"
-          >
-            <img
-              alt=""
-              class="video-body__thumbnail"
-              src="../assets/images/projects/thumbnail/project01.svg"
-            />
-            <div class="video-info">
-              <h6 class="video-info__name">Move it</h6>
-            </div>
-          </div>
-          <div
-            class="video-body__item"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-offset="200"
-          >
-            <img
-              alt=""
-              class="video-body__thumbnail"
-              src="../assets/images/projects/thumbnail/project01.svg"
-            />
-            <div class="video-info">
-              <h6 class="video-info__name">Move it</h6>
-            </div>
-          </div>
-          <div
-            class="video-body__item"
-            data-aos="fade-up"
-            data-aos-delay="250"
-            data-aos-offset="200"
-          >
-            <img
-              alt=""
-              class="video-body__thumbnail"
-              src="../assets/images/projects/thumbnail/project01.svg"
-            />
-            <div class="video-info">
-              <h6 class="video-info__name">Move it</h6>
-            </div>
-          </div>
-        </div>
-      </section>
+      <!--      <section class="video">-->
+      <!--        <div class="video-head">-->
+      <!--          <h6 class="video-head__title">Video projects</h6>-->
+      <!--          <p class="video-head__subtitle">-->
+      <!--            It's always good to know a little editing-->
+      <!--          </p>-->
+      <!--        </div>-->
+      <!--        <div class="video-body">-->
+      <!--          <div-->
+      <!--            class="video-body__item"-->
+      <!--            data-aos="fade-up"-->
+      <!--            data-aos-delay="150"-->
+      <!--            data-aos-offset="200"-->
+      <!--          >-->
+      <!--            <img-->
+      <!--              alt=""-->
+      <!--              class="video-body__thumbnail"-->
+      <!--              src="../assets/images/projects/thumbnail/project01.svg"-->
+      <!--            />-->
+      <!--            <div class="video-info">-->
+      <!--              <h6 class="video-info__name">Move it</h6>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--          <div-->
+      <!--            class="video-body__item"-->
+      <!--            data-aos="fade-up"-->
+      <!--            data-aos-delay="150"-->
+      <!--            data-aos-offset="200"-->
+      <!--          >-->
+      <!--            <img-->
+      <!--              alt=""-->
+      <!--              class="video-body__thumbnail"-->
+      <!--              src="../assets/images/projects/thumbnail/project01.svg"-->
+      <!--            />-->
+      <!--            <div class="video-info">-->
+      <!--              <h6 class="video-info__name">Move it</h6>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--          <div-->
+      <!--            class="video-body__item"-->
+      <!--            data-aos="fade-up"-->
+      <!--            data-aos-delay="200"-->
+      <!--            data-aos-offset="200"-->
+      <!--          >-->
+      <!--            <img-->
+      <!--              alt=""-->
+      <!--              class="video-body__thumbnail"-->
+      <!--              src="../assets/images/projects/thumbnail/project01.svg"-->
+      <!--            />-->
+      <!--            <div class="video-info">-->
+      <!--              <h6 class="video-info__name">Move it</h6>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--          <div-->
+      <!--            class="video-body__item"-->
+      <!--            data-aos="fade-up"-->
+      <!--            data-aos-delay="250"-->
+      <!--            data-aos-offset="200"-->
+      <!--          >-->
+      <!--            <img-->
+      <!--              alt=""-->
+      <!--              class="video-body__thumbnail"-->
+      <!--              src="../assets/images/projects/thumbnail/project01.svg"-->
+      <!--            />-->
+      <!--            <div class="video-info">-->
+      <!--              <h6 class="video-info__name">Move it</h6>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--      </section>-->
     </div>
   </section>
 </template>

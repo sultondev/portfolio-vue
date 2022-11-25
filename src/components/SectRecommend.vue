@@ -39,18 +39,25 @@ import { ref } from "vue"
 
 const recommends = ref([
   {
-    name: "Shokhboz",
+    name: "Umar Shuhratovich",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium commodi explicabo fugit itaque maxime molestiae natus porro quaerat saepe.",
+      "Sultonkhon is first developer who I met in so young age. He has great methods to share his expression about a new thing.",
+    occupation: "Front-End development Teacher",
+    rate: "100/100",
+  },
+  {
+    name: "Azim Turdiev",
+    message:
+      "When I interviewed Sultan for a junior front-end developer position. I gave him difficult tasks those were in some terms difficult for a junior developer. Sultan could solve the problem. I was really amazed",
     occupation: "Software Engineer",
     rate: "100/80",
   },
   {
-    name: "Shokhboz",
+    name: "Aziz Bekmuradov",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium commodi explicabo fugit itaque maxime molestiae natus porro quaerat saepe.",
-    occupation: "Software Engineer",
-    rate: "100/80",
+      "About Sultan I can say one thing he is great solver for front-end problems. He really loves what he do I can ensure you that because I have been watching how he was fixing my platform. He do not escape from problems",
+    occupation: "CTO",
+    rate: "100/90",
   },
 ])
 </script>
