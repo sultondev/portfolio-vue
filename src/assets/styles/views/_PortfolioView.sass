@@ -20,10 +20,17 @@
       justify-content: space-between
       gap: 40px
       min-height: 500px
-
+      transition: all 0.2s
       position: relative
       z-index: 4
 
+      &:hover
+        border: 1px solid var(--clr-tertiary)
+        box-shadow: 0 0 16px var(--clr-tertiary)
+        transform: scale(1.02)
+
+        h6
+          color: var(--clr-primary)
 
     &__demo
       position: relative
@@ -36,7 +43,9 @@
 
 
     &__name
+      font-size: var(--heading-30)
       margin-bottom: 10px
+      transition: all 0.3s
 
     &__desc
       font-size: var(--heading-10)
