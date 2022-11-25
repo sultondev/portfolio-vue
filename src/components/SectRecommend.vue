@@ -52,6 +52,7 @@ const recommends = ref([
     occupation: "Front-End development Teacher",
     rate: "100/100",
     company: "IT park",
+
   },
   {
     name: "Azim Turdiev",
@@ -68,7 +69,7 @@ const recommends = ref([
     occupation: "CTO",
     rate: "100/90",
     company: "IT park",
-  },
+  }
 ])
 </script>
 
