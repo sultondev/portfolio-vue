@@ -16,6 +16,7 @@
               :href="project.linkToProject"
               class="portfolio-list__link"
               target="_blank"
+
             >
               <div>
                 <h6 class="portfolio-list__name">
@@ -43,6 +44,7 @@
                 />
               </div>
             </a>
+
           </li>
         </ul>
       </div>
@@ -63,6 +65,7 @@ const projects: any = ref([])
 async function fetchProjects(url: string) {
   const fetchingData = await axios.get(url)
   if (fetchingData.data.data.length > 0) {
+
     portfolioStore.setProjects(fetchingData.data.data)
     projects.value = fetchingData.data.data.map(
       (item: { id: number; attributes: any }) => item.attributes
@@ -75,6 +78,7 @@ async function fetchProjects(url: string) {
         )
       )
     )
+
   }
 }
 
@@ -88,5 +92,6 @@ onMounted(() => {
 </script>
 
 <style lang="sass" scoped>
+
 @import "@/assets/styles/views/PortfolioView.sass"
 </style>

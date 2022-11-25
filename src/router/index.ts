@@ -6,6 +6,7 @@ import InterestsView from "@/views/InterestsView.vue"
 import ComingSoon from "@/views/ComingSoon.vue"
 import PortfolioView from "@/views/PortfolioView.vue"
 
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -43,6 +44,7 @@ const router = createRouter({
       name: "Portfolio",
       component: PortfolioView,
     },
+
     // {
     //   path: "/about",
     //   name: "about",
