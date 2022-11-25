@@ -15,17 +15,24 @@
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <span class="recommend-list__rate">{{ person.rate }}</span>
-          <p class="recommend-list__message">
-            {{ person.message }}
-          </p>
-          <div class="recommend-list-head">
-            <h6 class="recommend-list__name">
-              {{ person.name }}
-            </h6>
-            <span> &centerdot; </span>
-            <p class="recommend-list__occupation">
-              {{ person.occupation }}
+          <div>
+            <p class="recommend-list__rate">{{ person.rate }}</p>
+            <p class="recommend-list__message">
+              {{ person.message }}
+            </p>
+          </div>
+          <div class="recommend-list__wrapper">
+            <div class="recommend-list-head">
+              <h6 class="recommend-list__name">
+                {{ person.name }}
+              </h6>
+              <span> &centerdot; </span>
+              <p class="recommend-list__occupation">
+                {{ person.occupation }}
+              </p>
+            </div>
+            <p class="recommend-list__company">
+              {{ person.company }}
             </p>
           </div>
         </li>
@@ -41,9 +48,10 @@ const recommends = ref([
   {
     name: "Umar Shuhratovich",
     message:
-      "Sultonkhon is first developer who I met in so young age. He has great methods to share his expression about a new thing.",
+      "Sultonkhon is first developer who I met in so young age. He has great methods to share his expression about a new thing. He loves to teach students with funny examples. Sometimes, he is a meme by himself.",
     occupation: "Front-End development Teacher",
     rate: "100/100",
+    company: "IT park",
   },
   {
     name: "Azim Turdiev",
@@ -51,6 +59,7 @@ const recommends = ref([
       "When I interviewed Sultan for a junior front-end developer position. I gave him difficult tasks those were in some terms difficult for a junior developer. Sultan could solve the problem. I was really amazed",
     occupation: "Software Engineer",
     rate: "100/80",
+    company: "IT PROSTO",
   },
   {
     name: "Aziz Bekmuradov",
@@ -58,6 +67,7 @@ const recommends = ref([
       "About Sultan I can say one thing he is great solver for front-end problems. He really loves what he do I can ensure you that because I have been watching how he was fixing my platform. He do not escape from problems",
     occupation: "CTO",
     rate: "100/90",
+    company: "IT park",
   },
 ])
 </script>
