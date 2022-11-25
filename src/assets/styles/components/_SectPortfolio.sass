@@ -19,15 +19,19 @@
     width: 100%
     justify-content: space-between
     padding: 60px 40px
+    column-gap: 20px
 
-
-    &__item
+    &__link
       border-radius: 16px
       border: 1px solid var(--clr-primary)
       padding: 28px 30px
       display: flex
       flex-direction: column
+      justify-content: space-between
       gap: 40px
+      min-height: 480px
+      position: relative
+      z-index: 4
 
       &:nth-child(2n)
         border: none
@@ -45,6 +49,7 @@
     &__picture
       width: 100%
       object-fit: cover
+      max-height: 180px
 
     &__status
       background: #4AE2904D
