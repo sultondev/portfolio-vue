@@ -5,7 +5,7 @@ import ToolsView from "@/views/ToolsView.vue"
 import InterestsView from "@/views/InterestsView.vue"
 import ComingSoon from "@/views/ComingSoon.vue"
 import PortfolioView from "@/views/PortfolioView.vue"
-import PortfolioDetailsView from "@/views/PortfolioDetailsView.vue"
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -40,16 +40,11 @@ const router = createRouter({
       component: ComingSoon,
     },
     {
-      path: "/portfolio",
+      path: "/portfolios",
       name: "Portfolio",
       component: PortfolioView,
     },
-    {
-      path: "/portfolio/:id",
-      name: "PortfolioDetails",
-      component: PortfolioDetailsView,
-      props: true,
-    },
+
     // {
     //   path: "/about",
     //   name: "about",

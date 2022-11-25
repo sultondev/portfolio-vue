@@ -2,17 +2,21 @@
   <section class="portfolio">
     <div class="container">
       <h6 class="general__titles portfolio__title">Portfolio</h6>
-      <div v-if="projects" class="">
+      <div v-if="projects" class="portfolio-wrapper">
         <ul class="portfolio-list">
           <li
-            v-for="project in projects"
+            v-for="(project, idx) in projects"
             :key="project.slug"
+            :data-aos-delay="20 * idx"
+            :data-aos-offset="50 * idx"
             class="portfolio-list__item"
             data-aos="fade-up"
           >
-            <router-link
-              :to="'portfolio/' + project.slug"
+            <a
+              :href="project.linkToProject"
               class="portfolio-list__link"
+              target="_blank"
+
             >
               <div>
                 <h6 class="portfolio-list__name">
@@ -33,15 +37,14 @@
                     {{ tech }}
                   </span>
                 </div>
-                <a :href="project.linkToProject" class="portfolio-list__demo">
-                  <img
-                    alt=""
-                    class="portfolio-list__thumb"
-                    src="@/assets/images/projects/thumbnail/vue-thumb.jpg"
-                  />
-                </a>
+                <img
+                  :src="project.linkToPicture"
+                  alt=""
+                  class="portfolio-list__thumb"
+                />
               </div>
-            </router-link>
+            </a>
+
           </li>
         </ul>
       </div>
@@ -61,19 +64,34 @@ const projects: any = ref([])
 
 async function fetchProjects(url: string) {
   const fetchingData = await axios.get(url)
-  if (fetchingData.status === 200) {
+  if (fetchingData.data.data.length > 0) {
+
     portfolioStore.setProjects(fetchingData.data.data)
     projects.value = fetchingData.data.data.map(
       (item: { id: number; attributes: any }) => item.attributes
     )
+    localStorage.setItem(
+      "portfolios",
+      JSON.stringify(
+        fetchingData.data.data.map(
+          (item: { id: number; attributes: any }) => item.attributes
+        )
+      )
+    )
+
   }
 }
 
 onMounted(() => {
   fetchProjects("/portfolios")
+  if (projects.value.length < 1) {
+    const localData: any = localStorage.getItem("portfolios")
+    projects.value = JSON.parse(localData)
+  }
 })
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
+
 @import "@/assets/styles/views/PortfolioView.sass"
 </style>

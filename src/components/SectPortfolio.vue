@@ -30,42 +30,44 @@
       </div>
       <ul class="portfolio-list">
         <li
+          v-for="project in projects"
           class="portfolio-list__item"
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
           data-aos-delay="100"
         >
-          <div class="portfolio-list__one">
-            <h6 class="portfolio-list__name">Move it</h6>
-            <p class="portfolio-list__desc">
-              Aplicação da NLW#04 da Rocketseat. Desenvolvida com React.
-              Plataforma de Pomodoro com exercícios.
-            </p>
-          </div>
-
-          <div class="portfolio-list__two">
-            <div class="portfolio-tags flex">
-              <p class="portfolio-list__status general__titles general-br__8">
-                Online
+          <a :href="project.linkToProject" class="portfolio-list__link">
+            <div class="portfolio-list__one">
+              <h6 class="portfolio-list__name">{{ project.name }}</h6>
+              <p class="portfolio-list__desc">
+                {{ project.description }}
               </p>
-              <p
-                v-for="tag in ['React', 'TypeScript', 'Node JS', 'TypeScript']"
-                :key="tag"
-                class="general__titles general-br__8"
-                v-text="tag"
-              ></p>
             </div>
-            <img
-              alt=""
-              class="portfolio-list__picture"
-              height="200"
-              src="../assets/images/projects/project-01.png"
-              width="300"
-            />
-          </div>
+
+            <div class="portfolio-list__two">
+              <div class="portfolio-tags flex">
+                <p class="portfolio-list__status general__titles general-br__8">
+                  Online
+                </p>
+                <p
+                  v-for="tag in project.tags.data"
+                  :key="tag"
+                  class="general__titles general-br__8"
+                  v-text="tag"
+                ></p>
+              </div>
+              <img
+                :src="project.linkToPicture"
+                alt=""
+                class="portfolio-list__picture"
+                height="200"
+                width="300"
+              />
+            </div>
+          </a>
         </li>
       </ul>
-      <router-link class="portfolio__more" to="portfolio"
+      <router-link class="portfolio__more" to="portfolios"
       >View more projects &rightarrow;
       </router-link>
       <section class="video">
@@ -143,10 +145,38 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue"
+import { inject, onMounted, ref } from "vue"
+
+const axios: any = inject("axios")
+const projects: any = ref([])
 
 
-const videosAmount = ref(4)
+async function fetchProjects(url: string) {
+  const fetchingData = await axios.get(url)
+  if (fetchingData.data.data.length > 0) {
+    projects.value = fetchingData.data.data.map(
+      (item: { id: number; attributes: any }) => item.attributes,
+    )
+    localStorage.setItem(
+      "portfolioSect",
+      JSON.stringify(
+        fetchingData.data.data.map(
+          (item: { id: number; attributes: any }) => item.attributes,
+        ),
+      ),
+    )
+  }
+}
+
+onMounted(() => {
+  fetchProjects("/portfolios?pagination[page]=1&pagination[pageSize]=4")
+  if (projects.value.length < 1) {
+    const localData: any = localStorage.getItem("portfolioSect")
+    projects.value = JSON.parse(localData)
+  }
+})
+
+
 </script>
 
 <style lang="sass" scoped>
