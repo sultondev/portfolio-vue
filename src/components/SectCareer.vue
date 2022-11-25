@@ -30,24 +30,12 @@
             data-aos-delay="100"
             data-aos-offset="200"
           >
-            <li class="career-list__item">
-              <h6 class="career-list__title">Front-End developer</h6>
-              <p class="career-list__desc">Working as front-end developer</p>
+            <li v-for="info in academic" class="career-list__item">
+              <h6 class="career-list__title">{{ info.title }}</h6>
+              <p class="career-list__desc">{{ info.description }}</p>
               <div class="career-date">
-                <span class="career-date__gap">6 months</span>
-                <span class="career-date__due"
-                  >March/2021 &centerdot; September/2021</span
-                >
-              </div>
-            </li>
-            <li class="career-list__item">
-              <h6 class="career-list__title">Front-End developer</h6>
-              <p class="career-list__desc">Working as front-end developer</p>
-              <div class="career-date">
-                <span class="career-date__gap">6 months</span>
-                <span class="career-date__due"
-                  >March/2021 &centerdot; September/2021</span
-                >
+                <span class="career-date__gap">{{ info.long }}</span>
+                <span class="career-date__due">{{ info.due }}</span>
               </div>
             </li>
           </ul>
@@ -69,7 +57,24 @@
 <script lang="ts" setup>
 import { ref } from "vue"
 
-const academic = ref([])
+const academic = ref([
+  {
+    title: "Junior React JS developer, IT Prosto, Moscow",
+    description: `I started working as Junior React JS developer. My responsibility is creating new sites and optimizing existing ones. I fixed several bugs and add a feature to a website. It was nice experience. And now I’m given to create a marketplace front-end side.`,
+    long: "6 months",
+    due: "MARCH/2022 · MAY/2022",
+  },
+  {
+    title: `Front-End developer, IT-park, Yangiyer city`,
+    description: `It was the best experience, teaching students to code, the first
+you will refresh your knowledge about programming, the second
+is you will have to seek the simplest way to explain what is
+programming actually is, so I'm really excited about that
+experience thanks a lot to IT park for this opportunity.`,
+    long: "15 months",
+    due: "AUGUST/2020 · DECEMBER/2021",
+  },
+])
 const professional = ref({})
 </script>
 
