@@ -9,9 +9,9 @@ interface AxiosOptions {
 }
 
 export const axiosInstance = axios.create({
-  baseURL: "https://portfolio-vue-backend-production.up.railway.app/api",
+  baseURL: "https://portfolio-vue-back.onrender.com/api",
+  // baseURL: "https://portfolio-vue-backend-production.up.railway.app/api",
   // baseURL: "http://localhost:1337/api",
-  // baseURL: "https://portfolio-vue-back.onrender.com/api",
 
 })
 
